@@ -27,7 +27,7 @@ public class MovieController {
     private MovieRepository movieRepository;
 
     @CrossOrigin
-    @GetMapping("/finAll")
+    @GetMapping("/findAll")
     public List<Movie> getAllMovie() {
         return movieRepository.findAll();
     }
